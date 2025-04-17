@@ -1,0 +1,11 @@
+bài 5.15 :
+sử dụng @qualifier ép kiêu , sử dụng @bean and @configuration 
+để thay thế cho @component 
+ 
+bài 6.3
+kết nối SQL
+@entyti : 
+@table
+@column
+@repository : kho chuwa thường dùng để quản lý DAO (data access object )
+gần giống với @componed nhưng  cái này hay dùng ở  DAO
