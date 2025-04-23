@@ -1,17 +1,15 @@
 package vn.hoa.spring7_8_pathvaliables.rest;
 
 import jakarta.annotation.PostConstruct;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import vn.hoa.spring7_8_pathvaliables.entity.Student;
+import vn.hoa.spring7_8_pathvaliables.exception.StudentException;
 
 import java.util.ArrayList;
 import java.util.List;
 @RestController
 @RequestMapping("/students")
-public class Controller {
+public class StudentController {
     List<Student> students;
     @PostConstruct
     public void creatStudent(){
@@ -27,11 +25,15 @@ public class Controller {
 
     @GetMapping("/{id}")
     public Student getStudentByName(@PathVariable int id){
+        Student st = null;
         for(Student student : students){
             if(student.getId() == id){
                 return student;
             }
         }
-        return null;
+        if(st == null){
+            throw new StudentException("canNot find student with id " + id);
+        }
+        return st;
     }
 }

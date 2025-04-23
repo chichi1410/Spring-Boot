@@ -9,3 +9,17 @@ kết nối SQL
 @column
 @repository : kho chuwa thường dùng để quản lý DAO (data access object )
 gần giống với @componed nhưng  cái này hay dùng ở  DAO
+
+
+bai7.8 :
+pathvariable  
+@GetMapping("/{id}")
+    public Student getStudentByName(@PathVariable int id)
+- thực hành xử lý ngoại lệ exception handing
+
+bai 8.1: 
+MNV : dev , JPA , Web , SQL
+tạo entity
+tạo interface DAO vs cac phuong thức find , find all , add , update , delete ...
+tạo repository : studenDAOiplm  va thực hiện các phương thức
+tạo RestController thực hiện các phương thức
