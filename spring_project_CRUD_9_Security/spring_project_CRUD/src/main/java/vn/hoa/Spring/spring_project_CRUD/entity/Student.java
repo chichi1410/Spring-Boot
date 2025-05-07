@@ -12,9 +12,9 @@ public class Student {
     @Column(name = "id")
     private int id;
     @Column(name = "ho_dem" , length = 45)
-    private String lastName;
+    private String LastName;
     @Column(name = "ten" , length = 45)
-    private String firstName;
+    private String FirstName;
     @Column(name = "email" , length = 45)
     private String email;
 
@@ -27,19 +27,19 @@ public class Student {
     }
 
     public String getLastName() {
-        return lastName;
+        return LastName;
     }
 
     public void setLastName(String lastName) {
-        this.lastName = lastName;
+        LastName = lastName;
     }
 
     public String getFirstName() {
-        return firstName;
+        return FirstName;
     }
 
     public void setFirstName(String firstName) {
-        this.firstName = firstName;
+        FirstName = firstName;
     }
 
     public String getEmail() {

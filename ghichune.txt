@@ -23,4 +23,14 @@ tạo entity
 tạo interface DAO vs cac phuong thức find , find all , add , update , delete ...
 tạo repository : studenDAOiplm  va thực hiện các phương thức
 tạo RestController thực hiện các phương thức
-- để rút ngắn DAO ta dùng studentrepository
+- để rút ngắn DAO ta dùng studentrepository (ko caanf ghi lai cac phuong thuc)
+- spring data res
+   + theem vao  <dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-rest</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+
+
+bai 8.4 xoa hết rest service  ,thêm phuong thức cho jpa
