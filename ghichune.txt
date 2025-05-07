@@ -23,3 +23,4 @@ tạo entity
 tạo interface DAO vs cac phuong thức find , find all , add , update , delete ...
 tạo repository : studenDAOiplm  va thực hiện các phương thức
 tạo RestController thực hiện các phương thức
+- để rút ngắn DAO ta dùng studentrepository
