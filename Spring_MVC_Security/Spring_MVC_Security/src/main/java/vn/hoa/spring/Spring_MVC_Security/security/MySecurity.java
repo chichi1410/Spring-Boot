@@ -34,7 +34,7 @@ public class MySecurity {
                         .requestMatchers("/public/**").permitAll()
                         .requestMatchers("/admin/**").hasRole("ADMIN")
                         .requestMatchers("/manager/**").hasAnyRole("ADMIN", "MANAGER")
-                        .requestMatchers("/teacher/**").hasAnyRole("ADMIN", "MANAGER", "TEACHER")
+                        .requestMatchers("/user/**").hasAnyRole("ADMIN", "MANAGER", "TEACHER")
                         .anyRequest().permitAll()
         ).formLogin(
                 form->form.loginPage("/showLoginPage")
